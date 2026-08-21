@@ -25,8 +25,6 @@ The framework is built upon **nnU‑Net v2** and introduces dedicated modules fo
 
 *Figure 2: Example MRI samples and corresponding lesion annotations from the dataset*
 
-> 
-> 💡 Image preparation tip: Please create folder `docs/images/` under repository root, then place your **network_architecture.png** (overall framework diagram) and **dataset_sample.png** (dataset example figure) into this directory.
 
 ---
 
