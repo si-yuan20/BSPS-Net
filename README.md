@@ -1,8 +1,4 @@
-可以。下面这版我已经按照你当前最新版手稿重新统一了：标题改为论文现用标题，方法名称统一为 **CG-BLPHA / H-DRE / HRSC-Loss**，补充了 **250例 ISLES 2022、655例 ATLAS v2.0、69例独立临床DWI队列** 的研究设计，并明确注明论文目前 **under review at Neurocomputing**；同时明确说明**完整代码、模型权重、数据预处理参数、nnU-Net v2 plans、数据集划分、训练配置和复现实验材料将在论文正式录用后统一发布**。这些内容与当前手稿保持一致。
 
-下面可以直接覆盖仓库中的 `README.md`。
-
-````markdown
 # BSPS-Net
 
 ## Brain Hemispheric Symmetry Prior-Guided Hierarchical Difference Reasoning for Ischemic Stroke Lesion Segmentation
