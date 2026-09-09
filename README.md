@@ -598,6 +598,3 @@ The current BSPS-Net implementation and experimental results have not been appro
 **BSPS-Net © 2026**
 
 ```
-
-有一个细节我建议你特别保留：不要再像旧 README 那样写 **“journal = Neurocomputing”** 到 BibTeX 中，因为目前只是送审，尚未录用。现在写成 `Manuscript under peer review` 更规范；等 Neurocomputing 正式接收并产生 DOI 后，再一次性把 Citation、License、代码、权重、数据划分和完整复现说明更新即可。
-```
