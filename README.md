@@ -5,7 +5,7 @@
 
 Official repository for **BSPS-Net**, a brain hemispheric symmetry prior-guided framework for ischemic stroke lesion segmentation.
 
-> **Manuscript status:** Under review at **Neurocomputing**.  
+> **Manuscript status:** Under review at ****.  
 > **Repository status:** Placeholder repository. The complete reproducibility package will be released after manuscript acceptance.
 
 ---
@@ -281,7 +281,7 @@ BSPS-Net extends this framework with hemispheric symmetry modeling and hierarchi
 
 > 🚧 **This repository is currently maintained as the official placeholder repository for BSPS-Net.**
 
-The manuscript is currently **under review at Neurocomputing**.
+The manuscript is currently **under review at **.
 
 To keep the public implementation consistent with the final accepted manuscript, the complete source code and reproducibility package are **not publicly released at this stage**.
 
