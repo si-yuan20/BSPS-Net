@@ -1,7 +1,7 @@
 
 # BSPS-Net
 
-## Brain Hemispheric Symmetry Prior-Guided Hierarchical Difference Reasoning for Ischemic Stroke Lesion Segmentation
+## Hemispheric Symmetry Prior-Guided Hierarchical Difference Reasoning for Ischemic Stroke Lesion Segmentation
 
 Official repository for **BSPS-Net**, a brain hemispheric symmetry prior-guided framework for ischemic stroke lesion segmentation.
 
@@ -13,8 +13,6 @@ Accurate segmentation of ischemic stroke lesions remains challenging because les
 BSPS-Net exploits the approximate bilateral symmetry of the human brain and uses **contralateral homologous tissue as a patient-specific anatomical reference**. Instead of identifying lesions solely from the affected image, the framework establishes cross-hemispheric correspondence and models pathological differences between homologous brain regions at multiple representation levels.
 
 The overall reasoning process can be summarized as:
-
-> **Homologous Correspondence → Hierarchical Difference Reasoning → Symmetry-Aware Supervision**
 
 BSPS-Net is implemented within the **nnU-Net v2** framework and introduces three main components:
 
