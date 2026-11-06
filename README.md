@@ -5,10 +5,6 @@
 
 Official repository for **BSPS-Net**, a brain hemispheric symmetry prior-guided framework for ischemic stroke lesion segmentation.
 
-> **Manuscript status:** Under review at ****.  
-> **Repository status:** Placeholder repository. The complete reproducibility package will be released after manuscript acceptance.
-
----
 
 ## Overview
 
@@ -203,7 +199,7 @@ Clinical imaging characteristics include:
 
 - DWI;
 - `b = 1000 s/mm²`;
-- 3.0 T Siemens or GE MRI systems;
+- 3.0 T Siemens;
 - no retraining;
 - no fine-tuning;
 - no external-domain adaptation;
@@ -310,96 +306,6 @@ The planned release includes:
 
 ---
 
-### Data Preprocessing
-
-The release will include the preprocessing materials required to reproduce the study, including:
-
-- dataset conversion scripts;
-- spatial orientation handling;
-- anatomical left-right axis verification;
-- image-label geometry checking;
-- resampling configuration;
-- intensity normalization;
-- symmetry-preserving cropping and padding;
-- mirrored-input construction;
-- paired patch sampling;
-- paired data augmentation;
-- lesion-volume analysis scripts.
-
----
-
-### nnU-Net v2 Planning Files
-
-Dataset-specific nnU-Net v2 configurations will be released, including:
-
-- `dataset.json`;
-- `nnUNetPlans.json`;
-- experiment planning parameters;
-- target voxel spacing;
-- patch size;
-- batch size;
-- normalization configuration;
-- architecture configuration;
-- inference configuration.
-
----
-
-### Dataset Splits
-
-The exact patient-level splits used in the manuscript will be released after acceptance.
-
-This will include:
-
-```text
-ISLES 2022
-├── training
-├── validation
-└── test
-
-ATLAS v2.0
-├── training
-├── validation
-└── test
-````
-
-Only dataset identifiers and split-definition files will be released.
-
-> **Original MRI data and lesion annotations will not be redistributed through this repository.**
-
-Users must obtain ISLES 2022 and ATLAS v2.0 from their official sources and comply with the corresponding dataset licenses and data-use agreements.
-
----
-
-### Training Configuration
-
-The final release will document the complete experimental configuration, including:
-
-```text
-Framework
-Network architecture
-Input configuration
-Target spacing
-Patch size
-Batch size
-Optimizer
-Initial learning rate
-Learning-rate scheduler
-Number of epochs
-Data augmentation
-Deep supervision
-Loss weights
-Alignment parameters
-Random seeds
-Mixed-precision configuration
-Checkpoint selection
-Inference configuration
-Post-processing
-Hardware environment
-Software environment
-```
-
----
-
 ### Model Weights
 
 The trained model checkpoints corresponding to the experiments reported in the final accepted manuscript will be released where permitted by applicable data-use and institutional policies.
@@ -447,30 +353,6 @@ After manuscript acceptance, we plan to release the materials required to reprod
 The implementation will retain compatibility with the standard nnU-Net v2 directory organization and experiment workflow whenever possible.
 
 ---
-
-## Current Availability
-
-| Resource                      | Current status              |
-| ----------------------------- | --------------------------- |
-| Manuscript information        | Available                   |
-| Network architecture figures  | Available                   |
-| Dataset information           | Available                   |
-| Complete BSPS-Net source code | 🔒 Release after acceptance |
-| CG-BLPHA implementation       | 🔒 Release after acceptance |
-| H-DRE implementation          | 🔒 Release after acceptance |
-| HRSC-Loss implementation      | 🔒 Release after acceptance |
-| Training scripts              | 🔒 Release after acceptance |
-| Inference scripts             | 🔒 Release after acceptance |
-| Evaluation scripts            | 🔒 Release after acceptance |
-| Preprocessing scripts         | 🔒 Release after acceptance |
-| nnU-Net v2 plans              | 🔒 Release after acceptance |
-| Dataset split files           | 🔒 Release after acceptance |
-| Model checkpoints             | 🔒 Release after acceptance |
-| Environment configuration     | 🔒 Release after acceptance |
-| Reproduction instructions     | 🔒 Release after acceptance |
-
----
-
 ## Data Availability
 
 ISLES 2022 and ATLAS v2.0 are publicly available from their respective official repositories.
@@ -506,7 +388,7 @@ Temporary manuscript information:
 
 ```bibtex
 @article{Zhao2026BSPSNet,
-  title  = {Brain Hemispheric Symmetry Prior-Guided Hierarchical Difference Reasoning for Ischemic Stroke Lesion Segmentation},
+  title  = {Hemispheric Symmetry Prior-Guided Hierarchical Difference Reasoning for Ischemic Stroke Lesion Segmentation},
   author = {Zhao, Sichao and Lin, Xiaozhen and Li, Jiayi and Shen, Shujing and Hu, Jianping and He, Yongling and Yan, Wen and Dong, Jianwei and Qiu, Xuejun},
   year   = {2026},
   note   = {Manuscript under peer review}
@@ -528,70 +410,7 @@ We gratefully acknowledge:
 * the ATLAS v2.0 organizers and data contributors;
 * the clinical collaborators involved in the independent external validation cohort.
 
-The study was supported by:
 
-* 2026 Guangdong Pharmaceutical University Special Fund for Discipline Optimization and Quality Improvement
-  (`XKPYMS20260823`, `XKPYMS20260835`);
-
-* Special Fund for the 2026 Interdisciplinary Pharmaceutical–Medical–Engineering Program at the School of Medical Information Engineering
-  (`GDPUMIEZD202604`);
-
-* Medical Scientific Research Foundation of Guangdong Province
-  (`B2026621`, `A2026283`);
-
-* Guangdong Undergraduate Teaching Quality and Teaching Reform Project
-  (Smart Rehabilitation Modern Industry Institute).
-
----
-
-## License
-
-The license for the BSPS-Net source code will be specified when the complete implementation is officially released.
-
-Third-party resources, including:
-
-* nnU-Net v2;
-* ISLES 2022;
-* ATLAS v2.0;
-
-remain subject to their respective licenses, terms of use, and data-sharing policies.
-
----
-
-## Updates
-
-Major repository updates will be announced here after manuscript acceptance.
-
-Planned updates include:
-
-* source-code release;
-* trained model weights;
-* preprocessing configurations;
-* nnU-Net v2 plans;
-* dataset split files;
-* training configurations;
-* evaluation scripts;
-* visualization scripts;
-* environment specifications;
-* reproducibility instructions.
-
-You may **Star** or **Watch** this repository to follow future releases.
-
----
-
-## Contact
-
-For questions regarding BSPS-Net, please use the **Issues** section of this GitHub repository.
-
-For academic correspondence regarding the manuscript, please contact the corresponding authors listed in the paper.
-
----
-
-## Disclaimer
-
-This repository is intended for **research purposes only**.
-
-The current BSPS-Net implementation and experimental results have not been approved as a medical device and should not be used for clinical diagnosis or treatment decisions.
 
 ---
 
